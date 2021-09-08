@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <main id = 'main-doc'>
+    <body>
+    <head>
+        <meta charset = "UTF-8"/>
+        <link href = 'style.css' rel = 'stylesheet'>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1"/>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+    <nav id = 'navbar'>
+        <header>
+            <h1 id = 'nav-header'>Intro to CSS</h1>
+        </header>
+        <button><a class = 'nav-link' href = '#Intro_to_CSS'>Intro to CSS</a></button>
+        <button><a class = 'nav-link' href = '#Types_of_CSS'>Types of CSS</a></button>
+        <button><a class = 'nav-link' href = '#CSS_Selectors'>CSS Selectors</a></button>
+        <button><a class = 'nav-link' href = '#CSS_Properties'>CSS Properties</a></button>
+        <button><a class = 'nav-link' href = '#Box_Model'>Box Model</a></button>
+        <button><a class = 'nav-link' href = '#Flexbox/Grid'>Flexbox/Grid</a></button>
+        <button><a class = 'nav-link' href = '#Continued_Learning'>Continued Learning</a></button>
+    </nav>
+        <section class = 'main-section' id = 'Intro_to_CSS'>
+            <header><h1>Intro to CSS</h1>
+            </header>
+            <p>CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. It is designed to help you create and style your website layouts, fonts, and coloring.
+                It pairs with HTML(Hyper-text Markup Language) while HTML is used to describe content of your website CSS allows you to format and design layouts to help keep people attracted and attentive.
+                It also solved a problem for early web devlopers where HTML does have some style tags built in, you would have to do it for every page, every element your working with. CSS on the other hand 
+                allows you to manipulate mutiple pages, elements, selectors, all with one simple sheet completley removed from your html files.</p>
+                <h2>Things to consider</h2>
+                <ul>
+                    <li>HTML and CSS go together, you will need fluent knowledge of both to make beautiful websites.</li>
+                    <li>You want some knowledge of the box model.</li>
+                    <li>Javascript can also give your websites a nice flare and some animation</li>
+                    <li>CSS will only help with Front-End devlopment, it wont help you route anything through servers</li>
+                    <li>Some of this documentation will use references from HTML</li>
+                    <li>There are references for everything listed at the bottom of the page</li>
+                </ul>
+        </section>
+        <section class = 'main-section' id = 'Types_of_CSS'>
+            <header>
+            <h1>Types of CSS</h1>
+            </header>
+            <p>This section will describe the three ways you can use CSS within your websites.</p>
+            <ul>
+                <li>Inline CSS</li>
+                <p>This is coded within a tag in your HTML document</p>
+                <p><span class = 'bold-text'>Example</span>:<br> 
+                <code>&lt;<span class = 'blue-text'>p</span> <span class = 'blue-text'>style</span> = <span class = 'orange-text'>'color: blue'</span>&gt; <span class = 'white-text'>example text</span> &lt;/<span class = 'blue-text'>p</span>&gt;</code></p>
+                <p><span class = 'bold-text'>What it does</span>:<br></p>
+                <p>This would change 'example text' to '<span class = 'blue-text'>example text</span>'</p>
+
+                <li>Internal CSS</li>
+                <p>This goes generally at the top of your HTML document and will style that page with the selectors you choose</p>
+                <p><span class = 'bold-text'>Example</span>:<br>
+                    <div class = 'codes'>
+                        <code>&lt;<span class = 'blue-text'>style</span>&gt;<br>
+                        <span class = 'gold-text'>.b</span> {<br>
+                        <span class = 'light-blue-text'>background-color</span><span class = 'white-text'>:</span><span class = 'orange-text'>blue</span><span class = 'white-text'>;</span><br>}
+                        </code></div>
+                        <p><span class = 'bold-text'>What it does</span>:<br></p>
+                        <p>The code below would change the background color of your <span class = 'orange-text'>b</span> class to blue</p>
+                </p>
+                <li><h3>External CSS</h3></li>
+                <p>This is a seperate document from your HTML with the .css extention that can control mutiple pages unlike Internal CSS.</p>
+                <p>You dont need the &lt;<span class = 'blue-text'>style</span>&gt; tag in your css document.</p>
+                <p>You do have to link your style sheet in each html document you are writing.</p>
+                <p><span class = 'bold-text'>Example</span>:<br>
+                    <div class = 'codes'>
+                        <code>
+                            <span class = 'gold-text'>p</span>{<br><span class = 'light-blue-text'>color</span><span class = 'white-text'>:</span><span class = 'orange-text'>green</span><span class = 'white-text'>;</span><br>}
+                        </code>
+                </div>
+                <p><span class = 'bold-text'>What it does</span>:<br></p>
+                <p>The code below would change the font color of all p tags that are linked with the .css document</p>
+            </p>
+            </ul>
+        </section>
+        <section class = 'main-section' id = 'CSS_Selectors'>
+        <header>
+            <h1>CSS Selectors</h1>
+        </header>
+            <p>Selectors are how CSS recognizes what part of your page its suppose to apply your styles to.</p>
+            <p>We can narrow it down to <b>five</b> different types of selectors</p>
+            <ul>
+                <li><h3>Simple Selectors</h3></li>
+                <p>This is one element selected by name such as an ID or a Class</p>
+                <p>IDs and Classes are set in your HTML document and </p>
+                <p>IDs are selected with a #</p>
+                <p>Classes are selected with a .</p>
+                <p><span class = 'bold-text'>Example</span>:<br></p>
+                <div class = 'codes'>
+                <code>
+                    <span class = 'gold-text'>.b</span> {<br>
+                    }<br>
+                    <span class = 'gold-text'>#b</span>{<br>
+                    }
+                </code>
+                </div>
+                <p><span class = 'bold-text'>What it does</span>:</p>
+                <p>.b will select all tags with the <span class = 'bold-text'>CLASS</span> <span class = 'orange-text'>b</span> so you cant style just those tags with class b</p>
+                <p>#b will select all tags with the <span class = 'bold-text'>ID</span> <span class = 'orange-text'>b</span> so you cant style just those tags with ID b</p>
+                <li><h3>Combinator Selectors</h3></li>
+                <p>It is used to select specific relationships between selectors</p> 
+                <p>Styling all the children of a div, or all the parents of your paragraph tags</p>
+                <p>A space between two selectors signifys all decendents within the first selector</p>
+                <p>> between two selectors signifys all children to a specific selector</p>
+                <p>+ between two selctors signifys all adjacent siblings to a specified selector</p>
+                <p>~ between two selectors signifys all siblings to a specified selector</p>
+                <p><span class = 'bold-text'>Example</span>:<br>
+                <div class = 'codes'>
+                    <code> 
+                    <span class = 'gold-text'>div p</span>{<br>}<br>
+                    <span class = 'gold-text'>div > p</span> {<br>}<br>
+                    <span class = 'gold-text'>div + p</span> {<br>}<br>
+                    <span class = 'gold-text'>div ~ p</span> {<br>}<br>
+                    </code>
+                </div>
+                <p><span class = 'bold-text'>What it does</span>:</p>
+                <p><span class = 'orange-text'>div p</span> selects all p elements within all divs</p>
+                <p><span class = 'orange-text'>div > p</span> selects all children of p within all divs</p>
+                <p><span class = 'orange-text'>div + p</span> selects all adjacent siblings for the first p elements within all divs</p>
+                <p><span class = 'orange-text'>div ~ p</span> selects all p elements that are siblings of all divs</p>
+                <li><h3>Pseudo-Class Selectors</h3></li>
+                <p>Selects a certian state</p>
+                <p>: are used to select pseudo-classes after your selector</p>
+                <p><span class = 'bold-text'>Example</span>:<br></p>
+                <div class = 'codes'>
+                <code>
+                    <span class = 'gold-text'>button:hover</span> {<br>
+                        <span class = 'light-blue-text'>background-color</span>:<span class = 'orange-text'>red</span>;<br>
+                    }
+                </code>
+                </div>
+                <p><span class = 'bold-text'>What it does</span>:</p>
+                <p>When you hover over any buttons on the page, it will change the background of your button to red</p>
+                <li><h3>Pseudo-Element Selectors</h3></li>
+                <p>Selects a certian part of an element.</p>
+                <p>Uses :: instead of : to select pseudo elements</p>
+                <p><span class = 'bold-text'>Example</span>:<br></p>
+                <div class = 'codes'>
+                    <code>
+                        <span class = 'gold-text'>p::firstline</span>{<br>
+                            <span class = 'light-blue-text'>color</span>:<span class = 'orange-text'>green</span><br>
+                        }
+                    </code>
+                </div>
+                <p><span class = 'bold-text'>What it does</span>:</p>
+                <p>It changes the first line of all p tag's font color to green</p>
+                <li><h3>Attribute Selectors</h3></li>
+                <p>Selects an attribute to be styled</p>
+                <p><span class = 'bold-text'>Example</span>:</p><br>
+                <div class = 'codes'>
+                    <code>
+                        <span class = 'gold-text'>input[type='button']</span>{<br>
+                        <span class = 'light-blue-text'>color</span>:<span class = 'orange-text'>black</span>;<br>
+                        }
+                    </code>
+                </div>
+                <p><span class = 'bold-text'>What it does</span>:</p>
+                <p>This will make your placeholder text for your buttons black instead of default gray.</p>
+            </ul>
+        </section>
+        <section class = 'main-section' id = 'CSS_Properties'>
+            <header>
+                <h1>CSS Properties</h1>
+            </header>
+            <p>Properties are how your browser will know what characteristic to apply to a page</p>
+            <p>While youve seen a few up above in the lighter blue text, there are tons of properties available to expirement with</p>
+            <p>I encourage you to check our references section out to see a reference of all properties within CSS.</p>
+            <p>Below are just a few of examples of CSS Properties, the properties are in the light blue text.</p>
+            <ol>
+                <div class = 'codes'>
+                    <li></li>
+                    <code>
+                        <span class = 'gold-text'>body</span> {<br>
+                        <span class = 'light-blue-text'>background-color</span>:<span class = 'orange-text'>purple</span>;<br>
+                        }
+                    </code>
+                </div>
+                <div class = 'codes'>
+                    <li></li>
+                    <code>
+                        <span class = 'gold-text'>p</span> {<br>
+                        <span class = 'light-blue-text'>color</span>:<span class = 'orange-text'>red</span>; {<br>
+                        }
+                    </code>
+                </div>
+                <div class = 'codes'>
+                    <li></li>
+                    <code>
+                        <span class = 'gold-text'>header</span> {<br>
+                        <span class = 'light-blue-text'>text-align</span>:<span class = 'orange-text'>center</span>;<br>
+                    }
+                    </code>
+                </div>
+            </ol>
+            <p><span class = 'bold-text'>What it does</span>:</p>
+            <ol>
+                <li><p>This will change the background color of your body to purple</p></li>
+                <li><p>This will change all text color in all p tags to red</p></li>
+                <li><p>This will align all the text in your header to the center of its element</p></li>
+            </ol>
+        </section>
+        <section class = 'main-section' id = 'Box_Model'>
+            <header>
+                <h1>Box model</h1>
+            </header>
+            <p>Box model is simple to understand and hard to master</p>
+            <p>But to be able to align items and understand how things are placed on a website you need to master the box model</p>
+            <p>Learning it will help you better set your items where they need to go</p>
+            <ul>
+                <li>Content</li>
+                <p>Inner most layer of the box model, where all your content and text appears</p>
+                <li>Padding</li>
+                <p>Right beside the content, transparent layer that creates a bit of space around the content</p>
+                <li>Border</li>
+                <p>Goes around the outside of the padding, can be colorful or transparent</p>
+                <li>Margin</li>
+                <p>Final layer also transparent, creates space around the element itself</p>
+            </ul>
+            <h2>Below is a picture of the box model</h2>
+            <img  id = 'box-model-pic' src = 'https://d19ta9rijs3cxg.cloudfront.net/wp-content/uploads/2016/03/4.png' rel = 'picture of the box model'>
+            <section class = 'main-section' id = 'Flexbox/Grid'>
+                <header>
+                    <h1>Flexbox/Grid</h1>
+                </header>
+                <p>You need to understand both models in depth to be able to swap and use both on your pages</p>
+                <p>This topic is very large, and highly debated on which one is the best and why</p>
+                <p>This will only go over a few pros and cons of both of them, and ill leave some references for you to do more research</p>
+                <ul>
+                    <li><h1>Flexbox</h1></li>
+                    <p class = 'gold-text'>Pros</p>
+                        <ul>
+                            <li>Easy to grow and shrink elements</li>
+                            <li>Better focus on content flow</li>
+                            <li>Better browser support</li>
+                            <li>Very little code needed to get a layout</li>
+                        </ul>
+                    <p class = 'gold-text'>Cons</p>
+                        <ul>
+                            <li>Can't do 2D layouts</li>
+                            <li>Preforamce issues with bigger websites</li>
+                            <li>Hard to overlap items</li>
+                            <li>A bit complicated to deal with whitespace</li>
+                        </ul>
+                </ul>
+                <ul>
+                    <li><h1>Grid</h1></li>
+                    <p class = 'gold-text'>Pros</p>
+                    <ul>
+                        <li>Can make 2D or 1D Layouts</li>
+                        <li>Easy to overlap objects</li>
+                        <li>Better focus on object positioning</li>
+                        <li>Easy to adjust for website responsiveness</li>
+                    </ul>
+                    <p class = 'gold-text'>Cons</p>
+                    <ul>
+                        <li>A lot of code must be written to get a grid up</li>
+                        <li>Must name lots of elements, and objects</li>
+                        <li>Can be complicated to learn</li>
+                        <li>The grid will sometimes not provide feedback until you correctly specify all the element names</li>
+                    </ul>
+                </ul>
+            <section class = 'main-section' id = 'Continued_Learning'>
+                <header>
+                    <h1>Continued Learning</h1>
+                </header>
+                <p>W3schools.com is where I did most of my research</p>
+                <p>I wanted to leave some other websites I use for reference both when coding and during my research</p>
+                <ul>
+                    <li>Where to start</li>
+                    <a href = 'https://www.w3schools.com/' rel = 'W3Schools.com'>www.W3schools.com</a><br>
+                    <li>Types of CSS</li>
+                    <a href = 'https://www.geeksforgeeks.org/types-of-css-cascading-style-sheet/#:~:text=There%20are%20three%20types%20of%20CSS%20which%20are,2%20Internal%20or%20Embedded%20CSS%203%20External%20CSS' rel = 'types of css website'>Geeks For Geeks Guide to CSS Types</a>
+                    <li>CSS Selectors</li>
+                    <a href = 'https://www.freecodecamp.org/news/css-selectors-cheat-sheet/' rel = 'free code camp css selectors cheat sheet'>Free Code Camp's CSS Selectors Cheat Sheet</a>
+                    <li>CSS Properties</li>
+                    <a href = 'https://www.cssportal.com/css-properties/index.php' rel = 'cssportal properties reference sheet'>CSS Portal Properties Reference Sheet</a>
+                    <li>Box Model</li>
+                    <a href = 'https://www.w3.org/TR/CSS2/box.html' rel = 'W3 Box Model Guied'>W3's Box Model Guide</a>
+                    <li>Flexbox/Grid</li>
+                    <a href = 'https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184' rel = 'Article on when to use flexbox or grid'>Anna Monus's Article on when to use flexbox vs grid</a><br>
+                    <a href = 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/'>CSS Trick's Guide to Flexbox</a><br>
+                    <a href = 'https://www.telerik.com/blogs/guide-css-grid'>Leonardo Maldonado's Guide to CSS Grid</a>
+                </ul>
+            </section>
+        </body>
+    </main>
+</html>

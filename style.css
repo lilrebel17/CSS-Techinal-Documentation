@@ -1,0 +1,240 @@
+html, body {
+    color: white;
+    margin-left:6%;
+    background-color:rgb(34, 33, 33);
+    left: 1;
+    right:1;
+}
+section{ 
+    background-color: rgb(34, 33, 33);
+    border-style: inset;
+    border-left: transparent;
+}
+aside h2 {
+    text-align: center;
+}
+li {
+    font-weight: bold;
+    color: green;
+}
+aside li {
+    font-weight: initial;
+    color: white;
+}
+a {
+    border: hidden;
+    text-decoration: none;
+    color: gold;
+}
+/* Nav Menu and Button Styling */
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    flex-basis:auto;
+    justify-content:space-evenly;
+    top: 0;
+    left: 0;
+    height:100%;
+    background-color:rgb(34, 33, 33);
+    border-right: solid gray;
+}
+button {
+    background-color: transparent;
+    border-top: hidden;
+    border-left: hidden;
+    border-bottom:solid gray;
+    font-size:1rem;
+
+}
+.nav-link {
+    list-style-type:none;
+    color: green;
+    text-decoration: none;
+}
+#nav-header {
+    border-bottom: solid gray;
+}
+h1 {
+    color: green;
+}
+h2 {
+    color: green;
+}
+ol p {
+    color: white;
+    font-weight:normal;
+}
+ul > ul > li {
+    color: white;
+}
+/* Nav Menu and Button Styling */
+/* These are used to change background colors of the code snippets */
+code { /* Used for Single line code snippets */
+    background-color:rgb(18, 18, 18);
+}
+.codes { /* Used for Multi line Code Snippets */
+    display: flex;
+    background-color: rgb(18, 18, 18);
+    margin-right: 65%;
+}
+/* These are used in spans to change text color or weight of text*/
+.blue-text {
+    color: rgb(68, 68, 177);
+}
+.light-blue-text {
+    color: cyan;
+}
+.gray-text {
+    color: gray;
+}
+.orange-text {
+    color: orange;
+}
+.white-text {
+    color: white;
+}
+.gold-text {
+    color: gold;
+}
+.bold-text {
+    font-weight: bold;
+    color:gold;
+}
+/* These are used in spans to change text color or weight of text*/
+#Intro_to_CSS li{
+    font-weight: initial;
+    color: white;
+}
+#Intro_to_CSS h1 {
+    text-align: center;
+}
+#box-model-pic {
+    width: 35%;
+    height: auto;
+}
+.pros_cons {
+    color: white;
+}
+@media screen and (max-width: 2498px) {
+    #navbar {
+        font-size: 1.70em;
+    }
+    h1{
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    body {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 2441px) {
+    #navbar {
+        font-size: 1.60em;
+    }
+}
+@media screen and (max-width: 2315px) {
+    #navbar { 
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width: 2019px){
+    #navbar {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1739px){
+    #navbar {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1483px){
+    #navbar {
+        font-size: initial;
+    }
+}
+@media screen and (max-width: 1383px){
+    body {
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 1260px){
+    body {
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 1165px){
+    body{
+        margin-left: 9%;
+    }
+    h1{
+        font-size: initial;
+    }
+    h2 {
+        font-size: initial;
+    }
+    body {
+        font-size: initial;
+    }
+}
+@media screen and (max-width: 1099px){
+    body {
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1027px){
+    body{ 
+        margin-left: 11%;
+    }
+}
+@media screen and (max-width: 971px){
+    #navbar{
+        right: 84.5%;
+    }
+}
+@media screen and (max-width: 530px){
+    html, body {
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    #navbar {
+        flex-direction:row;
+        justify-content:space-evenly;
+        top: initial;
+        bottom: 0;
+        height:10%;
+        width: 100%;
+        background-color:rgb(34, 33, 33);
+        border-top: solid gray;
+        text-align: center;
+    }
+    button {
+        background-color:rgb(34, 33, 33);
+        font-size: .8em;
+        border-right: solid gray;
+        border-left: solid gray;
+        border-top: solid gray;
+    }
+    #navbar h1 {
+        background-color:rgb(34, 33, 33);
+        font-size:.8em;
+        height: 95%;
+        margin-bottom: 100%;
+        margin-top: 0%;
+        border-right: solid gray;
+        border-left: solid gray;
+        border-top: solid gray;
+        border-bottom: solid gray;
+    }
+}
+@media screen and (min-width:354px) and (max-width:486px){
+    button {
+        font-size: .5em;
+    }
+}
+@media screen and (max-width:354px){
+    #navbar {
+        left: 400%;
+    }
