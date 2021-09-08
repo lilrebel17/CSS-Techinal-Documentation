@@ -1,8 +1,8 @@
 <h1>CSS Techincal Documentation</h1><br>
 <p>Made for FreeCodeCamp's Responsive Web Development Course</p><br><br>
 
-<h4>Project Overview</h4>
-<p> I needed to make a techincal document that was within the standards set by FreeCodeCamp. </p><br><br>
+<h1>Project Overview</h1>
+<p> I needed to make a techincal document that was within the standards set by FreeCodeCamp. This included some design decisions and some portions of the page that had to be put on the page</p><br><br>
 
 <h1>Problem</h1><br>
 <p>Make something not boring, thats easy to read and digest for beginners</p><br>
