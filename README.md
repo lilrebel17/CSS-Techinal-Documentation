@@ -1,6 +1,3 @@
-# CSS Technical Documentation
- Techincal Documentation for CSS
-
 <h1>CSS Techincal Documentation</h1><br>
 <p>Made for FreeCodeCamp's Responsive Web Development Course</p><br><br>
 
